@@ -1,0 +1,168 @@
+---
+openapi: 3.0.3
+info:
+  title: rspec-openapi-test
+  version: 1.0.0
+servers:
+- url: http://localhost:3000
+- url: http://localhost:4000
+paths:
+  "/api/v1/tables":
+    get:
+      summary: index
+      tags:
+      - てーぶるのいんでっくす
+      parameters:
+      - name: X-Authorization-Token
+        in: header
+        required: true
+        schema:
+          type: string
+        example: k0kubun
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+        example: 1
+      - name: per
+        in: query
+        required: false
+        schema:
+          type: integer
+        example: 10
+      responses:
+        '200':
+          description: ここに説明入ります
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    title:
+                      type: string
+                    memo:
+                      type: string
+                    created_at:
+                      type: string
+                    updated_at:
+                      type: string
+                  required:
+                  - id
+                  - title
+                  - memo
+                  - created_at
+                  - updated_at
+              example:
+              - id: 435
+                title: minnow
+                memo: Ornendil
+                created_at: '2023-10-19T07:59:42.210Z'
+                updated_at: '2023-10-19T07:59:42.210Z'
+              - id: 436
+                title: beetle
+                memo: Hallas
+                created_at: '2023-10-19T07:59:42.223Z'
+                updated_at: '2023-10-19T07:59:42.223Z'
+              - id: 437
+                title: dinosaur
+                memo: Goldilocks Gardner
+                created_at: '2023-10-19T07:59:42.224Z'
+                updated_at: '2023-10-19T07:59:42.224Z'
+              - id: 438
+                title: mule
+                memo: Fingolfin
+                created_at: '2023-10-19T07:59:42.225Z'
+                updated_at: '2023-10-19T07:59:42.225Z'
+              - id: 439
+                title: turtle
+                memo: Bard
+                created_at: '2023-10-19T07:59:42.225Z'
+                updated_at: '2023-10-19T07:59:42.225Z'
+              - id: 440
+                title: ape
+                memo: Halfred Gamgee
+                created_at: '2023-10-19T07:59:42.226Z'
+                updated_at: '2023-10-19T07:59:42.226Z'
+              - id: 441
+                title: bat
+                memo: Indor
+                created_at: '2023-10-19T07:59:42.227Z'
+                updated_at: '2023-10-19T07:59:42.227Z'
+              - id: 442
+                title: oyster
+                memo: Húrin
+                created_at: '2023-10-19T07:59:42.227Z'
+                updated_at: '2023-10-19T07:59:42.227Z'
+              - id: 443
+                title: goose
+                memo: Farmer Cotton
+                created_at: '2023-10-19T07:59:42.228Z'
+                updated_at: '2023-10-19T07:59:42.228Z'
+              - id: 444
+                title: gerbil
+                memo: Mardil
+                created_at: '2023-10-19T07:59:42.230Z'
+                updated_at: '2023-10-19T07:59:42.230Z'
+    post:
+      summary: create
+      tags:
+      - てーぶるのいんでっくす
+      parameters:
+      - name: X-Authorization-Token
+        in: header
+        required: true
+        schema:
+          type: string
+        example: k0kubun
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                memo:
+                  type: string
+              required:
+              - memo
+            example:
+              title: foo
+              memo: bag
+      responses:
+        '200':
+          description: createの説明がここに説明入ります
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  title:
+                    type: string
+                  memo:
+                    type: string
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                required:
+                - id
+                - title
+                - memo
+                - created_at
+                - updated_at
+              example:
+                id: 455
+                title: foo
+                memo: bag
+                created_at: '2023-10-19T07:59:42.269Z'
+                updated_at: '2023-10-19T07:59:42.269Z'
+        '400':
+          description: titleがない場合400が返ります

@@ -1,0 +1,15 @@
+current directory: /Users/s_kaneko/work/rspec-openapi-test/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/s_kaneko/.asdf/installs/ruby/3.1.3/bin/ruby -I /Users/s_kaneko/.asdf/installs/ruby/3.1.3/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/s_kaneko/work/rspec-openapi-test/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20231019-39656-t3xvuk sitelibdir\=./.gem.20231019-39656-t3xvuk clean
+
+current directory: /Users/s_kaneko/work/rspec-openapi-test/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20231019-39656-t3xvuk sitelibdir\=./.gem.20231019-39656-t3xvuk
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/s_kaneko/work/rspec-openapi-test/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20231019-39656-t3xvuk sitelibdir\=./.gem.20231019-39656-t3xvuk install
+/opt/homebrew/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20231019-39656-t3xvuk
