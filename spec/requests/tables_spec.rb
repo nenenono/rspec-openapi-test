@@ -9,7 +9,7 @@ RSpec.describe 'Tables', type: :request do
       tags: ['てーぶるのいんでっくす'],
       description: 'ここに説明入ります'
     } do
-      get '/api/v1/tables', params: { page: '1', per: '10' }, headers: { 'X-Authorization-Token': 'k0kubun' }
+      get '/api/v1/tables', params: { page: '1', per: '10' }, headers: { 'aaaa': 'k0kubun' }
       expect(response.status).to eq(200)
     end
 

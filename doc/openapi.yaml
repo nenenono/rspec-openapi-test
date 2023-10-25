@@ -13,12 +13,6 @@ paths:
       tags:
       - てーぶるのいんでっくす
       parameters:
-      - name: X-Authorization-Token
-        in: header
-        required: true
-        schema:
-          type: string
-        example: k0kubun
       - name: page
         in: query
         required: false
@@ -58,56 +52,56 @@ paths:
                   - created_at
                   - updated_at
               example:
-              - id: 435
-                title: minnow
-                memo: Ornendil
-                created_at: '2023-10-19T07:59:42.210Z'
-                updated_at: '2023-10-19T07:59:42.210Z'
-              - id: 436
-                title: beetle
-                memo: Hallas
-                created_at: '2023-10-19T07:59:42.223Z'
-                updated_at: '2023-10-19T07:59:42.223Z'
-              - id: 437
-                title: dinosaur
-                memo: Goldilocks Gardner
-                created_at: '2023-10-19T07:59:42.224Z'
-                updated_at: '2023-10-19T07:59:42.224Z'
-              - id: 438
-                title: mule
-                memo: Fingolfin
-                created_at: '2023-10-19T07:59:42.225Z'
-                updated_at: '2023-10-19T07:59:42.225Z'
-              - id: 439
-                title: turtle
-                memo: Bard
-                created_at: '2023-10-19T07:59:42.225Z'
-                updated_at: '2023-10-19T07:59:42.225Z'
-              - id: 440
-                title: ape
-                memo: Halfred Gamgee
-                created_at: '2023-10-19T07:59:42.226Z'
-                updated_at: '2023-10-19T07:59:42.226Z'
-              - id: 441
-                title: bat
-                memo: Indor
-                created_at: '2023-10-19T07:59:42.227Z'
-                updated_at: '2023-10-19T07:59:42.227Z'
-              - id: 442
-                title: oyster
-                memo: Húrin
-                created_at: '2023-10-19T07:59:42.227Z'
-                updated_at: '2023-10-19T07:59:42.227Z'
-              - id: 443
-                title: goose
-                memo: Farmer Cotton
-                created_at: '2023-10-19T07:59:42.228Z'
-                updated_at: '2023-10-19T07:59:42.228Z'
-              - id: 444
-                title: gerbil
-                memo: Mardil
-                created_at: '2023-10-19T07:59:42.230Z'
-                updated_at: '2023-10-19T07:59:42.230Z'
+              - id: 497
+                title: weasel
+                memo: Berilac Brandybuck
+                created_at: '2023-10-20T05:02:48.998Z'
+                updated_at: '2023-10-20T05:02:48.998Z'
+              - id: 498
+                title: goldfish
+                memo: Tanta Hornblower
+                created_at: '2023-10-20T05:02:49.033Z'
+                updated_at: '2023-10-20T05:02:49.033Z'
+              - id: 499
+                title: koala
+                memo: Golasgil
+                created_at: '2023-10-20T05:02:49.034Z'
+                updated_at: '2023-10-20T05:02:49.034Z'
+              - id: 500
+                title: eagle
+                memo: Narmacil
+                created_at: '2023-10-20T05:02:49.035Z'
+                updated_at: '2023-10-20T05:02:49.035Z'
+              - id: 501
+                title: fly
+                memo: Minastan
+                created_at: '2023-10-20T05:02:49.036Z'
+                updated_at: '2023-10-20T05:02:49.036Z'
+              - id: 502
+                title: fish
+                memo: Bilbo Baggins
+                created_at: '2023-10-20T05:02:49.036Z'
+                updated_at: '2023-10-20T05:02:49.036Z'
+              - id: 503
+                title: skunk
+                memo: Lily Baggins
+                created_at: '2023-10-20T05:02:49.037Z'
+                updated_at: '2023-10-20T05:02:49.037Z'
+              - id: 504
+                title: monkey
+                memo: Grimbeorn
+                created_at: '2023-10-20T05:02:49.038Z'
+                updated_at: '2023-10-20T05:02:49.038Z'
+              - id: 505
+                title: otter
+                memo: Isengrim
+                created_at: '2023-10-20T05:02:49.038Z'
+                updated_at: '2023-10-20T05:02:49.038Z'
+              - id: 506
+                title: fox
+                memo: Gimilkhâd
+                created_at: '2023-10-20T05:02:49.039Z'
+                updated_at: '2023-10-20T05:02:49.039Z'
     post:
       summary: create
       tags:
@@ -159,10 +153,10 @@ paths:
                 - created_at
                 - updated_at
               example:
-                id: 455
+                id: 517
                 title: foo
                 memo: bag
-                created_at: '2023-10-19T07:59:42.269Z'
-                updated_at: '2023-10-19T07:59:42.269Z'
+                created_at: '2023-10-20T05:02:49.072Z'
+                updated_at: '2023-10-20T05:02:49.072Z'
         '400':
           description: titleがない場合400が返ります
